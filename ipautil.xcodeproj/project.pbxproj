@@ -1,0 +1,240 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C480BAD144F140600075FEC /* libarchive.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C480BAC144F140600075FEC /* libarchive.dylib */; };
+		5CE9B289144EBAEB00E38138 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CE9B288144EBAEB00E38138 /* Foundation.framework */; };
+		5CE9B28C144EBAEB00E38138 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CE9B28B144EBAEB00E38138 /* main.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5CD55FC8144FDA24003133F3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 12;
+			dstPath = /usr/local/bin;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		5C480BAC144F140600075FEC /* libarchive.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libarchive.dylib; path = usr/local/lib/libarchive.dylib; sourceTree = SDKROOT; };
+		5CE9B284144EBAEB00E38138 /* ipautil */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ipautil; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CE9B288144EBAEB00E38138 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5CE9B28B144EBAEB00E38138 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5CE9B28E144EBAEB00E38138 /* ipautil-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ipautil-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CE9B281144EBAEB00E38138 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C480BAD144F140600075FEC /* libarchive.dylib in Frameworks */,
+				5CE9B289144EBAEB00E38138 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CE9B279144EBAEA00E38138 = {
+			isa = PBXGroup;
+			children = (
+				5C480BAC144F140600075FEC /* libarchive.dylib */,
+				5CE9B28A144EBAEB00E38138 /* ipautil */,
+				5CE9B287144EBAEB00E38138 /* Frameworks */,
+				5CE9B285144EBAEB00E38138 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5CE9B285144EBAEB00E38138 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CE9B284144EBAEB00E38138 /* ipautil */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CE9B287144EBAEB00E38138 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CE9B288144EBAEB00E38138 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5CE9B28A144EBAEB00E38138 /* ipautil */ = {
+			isa = PBXGroup;
+			children = (
+				5CE9B28B144EBAEB00E38138 /* main.m */,
+				5CE9B28D144EBAEB00E38138 /* Supporting Files */,
+			);
+			path = ipautil;
+			sourceTree = "<group>";
+		};
+		5CE9B28D144EBAEB00E38138 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5CE9B28E144EBAEB00E38138 /* ipautil-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CE9B283144EBAEB00E38138 /* ipautil */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CE9B293144EBAEB00E38138 /* Build configuration list for PBXNativeTarget "ipautil" */;
+			buildPhases = (
+				5CE9B280144EBAEB00E38138 /* Sources */,
+				5CE9B281144EBAEB00E38138 /* Frameworks */,
+				5CD55FC8144FDA24003133F3 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ipautil;
+			productName = ipautil;
+			productReference = 5CE9B284144EBAEB00E38138 /* ipautil */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CE9B27B144EBAEA00E38138 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 5CE9B27E144EBAEA00E38138 /* Build configuration list for PBXProject "ipautil" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 5CE9B279144EBAEA00E38138;
+			productRefGroup = 5CE9B285144EBAEB00E38138 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CE9B283144EBAEB00E38138 /* ipautil */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CE9B280144EBAEB00E38138 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CE9B28C144EBAEB00E38138 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		5CE9B291144EBAEB00E38138 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				DEPLOYMENT_LOCATION = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		5CE9B292144EBAEB00E38138 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_LOCATION = YES;
+				DSTROOT = /;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = /usr/local/bin;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		5CE9B294144EBAEB00E38138 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ipautil/ipautil-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5CE9B295144EBAEB00E38138 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ipautil/ipautil-Prefix.pch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CE9B27E144EBAEA00E38138 /* Build configuration list for PBXProject "ipautil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE9B291144EBAEB00E38138 /* Debug */,
+				5CE9B292144EBAEB00E38138 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CE9B293144EBAEB00E38138 /* Build configuration list for PBXNativeTarget "ipautil" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE9B294144EBAEB00E38138 /* Debug */,
+				5CE9B295144EBAEB00E38138 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5CE9B27B144EBAEA00E38138 /* Project object */;
+}
