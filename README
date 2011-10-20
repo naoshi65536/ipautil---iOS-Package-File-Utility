@@ -1,0 +1,29 @@
+Ipautil helps normalize filenames of ipa files.
+It designed to be used by shell scripts..
+
+Ipautil reads .ipa file, locate Info.plist, decode Info.plist
+and prints value of property list entry.
+
+eg:
+	Prints Bundle Name (application name)
+	$ ipautil -i CFBundleName app.ipa
+	MyApplication
+
+	Pirnts Bundle Version
+	$ ipautil -i CFBundleVersion app.ipa
+	1.2
+
+	Renames app.ipa to better name
+	$ mv app.ipa `ipautil -i CFBundleName app.ipa`-`ipautil -i CFBundleVersion app.ipa`.ipa
+	=> mv app.ipa MyApplication-1.2.ipa
+
+	Prints entire Info.plist as XML.
+	$ ipautil -x app.ipa
+
+	Prints filenames in .ipa
+	$ ipautil -l app.ipa
+
+This project uses libarchive to read ipa file (tar.gz).
+libarchive: http://people.freebsd.org/~kientzle/libarchive/
+
+Naoshi Wakatabe
